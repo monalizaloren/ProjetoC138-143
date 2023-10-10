@@ -28,7 +28,7 @@ rightWristY = 0;
 rightWristX = 0;
 scoreRightWrist = 0;
 
-gameStatus = "";
+//passo 1
 
  function preload() {
   ballTouchPaddel = loadSound("ball_touch_paddel.wav");
@@ -63,14 +63,9 @@ function gotPoses(results)
   }
 }
 
-function startGame()
-{
-  gameStatus = "start";
-  document.getElementById("status").innerHTML = "Game Is Loaded";
-}
+//passo 2
 
-function draw(){
-if(gameStatus == "start")
+//passo 3
 {
   background(0); 
   image(video, 0, 0, 700, 550);
